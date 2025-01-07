@@ -20,7 +20,6 @@ export const register = async (req: Request, res: Response): Promise<void> => {
       _id: user._id,
       name: user.name,
       email: user.email,
-      createdAt: user.createdAt,
     };
     res.status(201).json({
       message: "User registered successfully...!",
@@ -110,5 +109,5 @@ export const deleteProfile = async (
 ): Promise<void> => {
   const user = req.user as IUser;
   await user.deleteOne();
-  res.json({ message: "User deleted successfully" });
+  res.status(200).json({ message: "User deleted successfully" });
 };
