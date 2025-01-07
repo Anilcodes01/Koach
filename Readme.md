@@ -68,7 +68,6 @@ The API uses **JWT** for authentication. The `BearerAuth` security scheme is use
 
    ```bash
    git clone https://github.com/Anilcodes01/Koach.git
-   cd koach-api
 2. Install dependencies
    ```bash
    npm install
